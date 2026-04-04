@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="site-favicon" rel="icon" href="/favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Pet Place</title>
+  <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body> <!-- oncontextmenu="return false;"-->
+  <div>
+    <nav>
+      <div class="nav_header">
+        <div class="nav_logo">
+          <a href="#" id="page-title">Pet Place</a>
+        </div>
+        <div class="nav_menu_btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav_links" id="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#service">Serviços</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <header id="none">
+      <div class="section_container header_container">
+        <div class="header_content">
+          <h4>Bem-vindo</h4>
+          <h1 id="hero-title"><br /><span id="hero-span"></span></h1>
+          <h2 id="hero-subtitle"></h2>
+          <p id="hero-description">
+
+          </p>
+          <div class="header_btn">
+            <button id="hero-btn">
+              Saiba Mais<i class="ri-arrow-right-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="header_image">
+          <img src="./src/img/header-bg.png" alt="fundo-cabecalho" class="header_image-bg" />
+          <img src="./src/img/header.png" alt="cabecalho" id="hero-photo" />
+        </div>
+      </div>
+      <div class="header_bottom"></div>
+    </header>
+
+    <section id="intro" class="section_container intro_container">
+      <p class="section_subheader">Introdução</p>
+      <h2 id="intro-header" class="section_header">Conheça melhor o nosso trabalho</h2>
+      <div class="intro_grid">
+        <div id="intro-1" class="intro_card">
+          <div class="intro_image">
+            <img src="./src/img/intro-1.png" alt="introducao" />
+          </div>
+          <h4 id="intro-1-title">Especialistas em Animais</h4>
+          <p id="intro-1-description">
+            Conheça nossa equipe de veterinários especializados, dedicados ao bem-estar do seu pet.
+          </p>
+          <!-- <a href="#">Leia Mais</a> -->
+        </div>
+        <div id="intro-2" class="intro_card">
+          <div class="intro_image">
+            <img src="./src/img/intro-2.png" alt="introducao" />
+          </div>
+          <h4 id="intro-2-title">Serviços Veterinários</h4>
+          <p id="intro-2-description">
+            Oferecemos uma ampla gama de serviços veterinários para manter seu pet saudável e feliz.
+          </p>
+          <!-- <a href="#">Leia Mais</a> -->
+        </div>
+        <div id="intro-3" class="intro_card">
+          <div class="intro_image">
+            <img src="./src/img/intro-3.png" alt="introducao" />
+          </div>
+          <h4 id="intro-3-title">Fale Conosco</h4>
+          <p id="intro-3-description">
+            Entre em contato conosco para dúvidas ou para agendar um atendimento para o seu pet.
+          </p>
+          <!-- <a href="#">Leia Mais</a> -->
+        </div>
+      </div>
+    </section>
+    <section class="section_container about_container" id="about">
+      <p class="section_subheader">Quem somos</p>
+      <h2 class="section_header" id="about-title">O que podemos fazer por você</h2>
+
+      <div class="about_row">
+        <div class="about_image">
+          <img id="about-img-1" src="./src/img/about-1.jpg" alt="about" />
+        </div>
+        <div class="about_content">
+          <span><img src="./src/img/about-1-icon.png" alt="about-icon" /></span>
+          <h4>Deixe-nos ajudá-lo com a saúde do seu animal de estimação</h4>
+          <p id="about-desc-1">
+            Nossos veterinários especializados estão aqui para fornecer cuidados abrangentes Uma orientação para
+            garantir que seu animal de estimação permaneça em perfeita saúde.
+          </p>
+        </div>
+      </div>
+      <div class="about_row">
+        <div class="about_image">
+          <img id="about-img-2" src="./src/img/about-2.jpg" alt="about" />
+        </div>
+        <div class="about_content">
+          <span><img src="./src/img/about-2-icon.png" alt="about-icon" /></span>
+          <h4>Pessoal atencioso cuidará do seu animal de estimação</h4>
+          <p id="about-desc-2">
+            Seu animal de estimação estará em boas mãos com nosso compassivo e Funcionários bem treinados, que tratam
+            cada animal de estimação como família.
+          </p>
+        </div>
+      </div>
+      <div class="about_row">
+        <div class="about_image">
+          <img id="about-img-3" src="./src/img/about-3.jpg" alt="about" />
+        </div>
+        <div class="about_content">
+          <span><img src="./src/img/about-3-icon.png" alt="about-icon" /></span>
+          <h4>Deixe-nos cuidar do seu precioso e amado animal de estimação</h4>
+          <p id="about-desc-3">
+            Do banho ao penteado, oferecemos serviços profissionais de higiene para manter seu animal de estimação com a
+            melhor aparência e sensação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section_container service_container" id="service">
+      <p class="section_subheader">Serviços</p>
+      <h2 class="section_header" id="service-header">
+        O que podemos fazer por você
+      </h2>
+      <div class="service_flex">
+
+        <div class="service_card" id="service-1">
+          <div>
+            <img src="./src/img/service-1.png" alt="service" />
+          </div>
+          <p id="service-1-title">Atendimento de emergência</p>
+        </div>
+
+        <div class="service_card" id="service-2">
+          <div>
+            <img src="./src/img/service-2.png" alt="service" />
+          </div>
+          <p id="service-2-title">Serviços de vacinação</p>
+        </div>
+
+        <div class="service_card" id="service-3">
+          <div>
+            <img src="./src/img/service-3.png" alt="service" />
+          </div>
+          <p id="service-3-title">Aconselhamento Nutricional</p>
+        </div>
+
+        <div class="service_card" id="service-4">
+          <div>
+            <img src="./src/img/service-4.png" alt="service" />
+          </div>
+          <p id="service-4-title">Consulta Comportamental</p>
+        </div>
+
+        <div class="service_card" id="service-5">
+          <div>
+            <img src="./src/img/service-5.png" alt="service" />
+          </div>
+          <p id="service-5-title">Serviços de hospedagem</p>
+        </div>
+      </div>
+    </section>
+
+    <script type="module">
+      import { API_URL } from "./env.js";
+
+      fetch(`${API_URL}/content/services-section`)
+        .then(res => res.json())
+        .then(data => {
+          const headerEl = document.getElementById("service-header");
+          if (headerEl) headerEl.textContent = data.header;
+        });
+    </script>
+
+    <section id="testimonials-section" class="client">
+      <div class="section_container client_container">
+        <p class="section_subheader">Depoimentos</p>
+        <h2 class="section_header">O que as pessoas dizem sobre nós</h2>
+
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide" id="testimonial-1">
+              <div class="client_card">
+                <div class="client_details">
+                  <img src="./src/img/client-1.jpg" alt="client" />
+                  <div>
+                    <h4>Sarah Johnson</h4>
+                    <h5>Graphic Designer</h5>
+                  </div>
+                </div>
+                <p>
+                  The care my dog received at Pet Doctor was exceptional.
+                  The vets were attentive cared about my dog's well-being.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="testimonial-2">
+              <div class="client_card">
+                <div class="client_details">
+                  <img src="./src/img/client-2.jpg" alt="client" />
+                  <div>
+                    <h4>Michael Adams</h4>
+                    <h5>Software Engineer</h5>
+                  </div>
+                </div>
+                <p>
+                  Pet Doctor saved my cat during an emergency! Their quick
+                  response and expertise made all the difference.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="testimonial-3">
+              <div class="client_card">
+                <div class="client_details">
+                  <img src="./src/img/client-3.jpg" alt="client" />
+                  <div>
+                    <h4>Emily Martinez</h4>
+                    <h5>Teacher</h5>
+                  </div>
+                </div>
+                <p>
+                  I trust Pet Doctor with all my pets. Their team is
+                  professional, and they always go the extra mile for their
+                  patients.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="testimonial-4">
+              <div class="client_card">
+                <div class="client_details">
+                  <img src="./src/img/client-4.jpg" alt="client" />
+                  <div>
+                    <h4>Jason Lee</h4>
+                    <h5>Marketing Specialist</h5>
+                  </div>
+                </div>
+                <p>
+                  The grooming services at Pet Doctor are fantastic! My pup
+                  always comes back looking fresh and happy.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide" id="testimonial-5">
+              <div class="client_card">
+                <div class="client_details">
+                  <img src="./src/img/client-5.jpg" alt="client">
+                  <div>
+                    <h4>David Thopson</h4>
+                    <h5>Accountant</h5>
+                  </div>
+                </div>
+                <p>
+                  I've never seen a team so dedicated to animals. Pet Doctor is
+                  my go-to clinic for all pet-related issues.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="section_container instagram_container">
+      <!-- Conteúdo fixo -->
+      <p class="section_subheader">Siga-nos</p>
+      <h2 class="section_header">Instagram</h2>
+
+      <!-- Carrossel -->
+      <div class="instagram_carousel">
+        <div class="instagram_grid" id="instagram_grid"></div>
+      </div>
+    </section>
+
+    <!-- <img src="./src/img/instagram-1.jpg" alt="instagram">
+        <img src="./src/img/instagram-2.jpg" alt="instagram">
+        <img src="./src/img/instagram-3.jpg" alt="instagram">
+        <img src="./src/img/instagram-4.jpg" alt="instagram"> -->
+
+    <footer id="contact">
+      <div class="section_container footer_container">
+        <div class="footer_col">
+          <div class="footer_logo">
+            <a href="#" id="page-title">Pet Place</a>
+          </div>
+        </div>
+        <div class="footer_col">
+          <h4>Company</h4>
+          <ul class="footer_links">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Intro</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <h4>Endereço</h4>
+          <ul class="footer_links">
+            <li> <a href="#">
+                <p id="contact-address">São Paulo, Brazil</p>
+              </a></li>
+            <li>
+              <a href="#" id="contact-map-link" target="_blank">
+                <p>View on Maps</p>
+              </a>
+            </li>
+          </ul>
+          <br />
+          <h4>Inquéritos</h4>
+          <ul class="footer_links">
+            <li><a href="#">
+                <p id="contact-phone">11 937613798</p>
+              </a></li>
+            </li>
+            <li><a href="#">
+                <p id="contact-email">exemplo30@gmail.com</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <br>
+          <h4>Siga-nos</h4>
+          <ul class="footer_socials">
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_bar">
+        Copyright &copy; <span id="footer-year"></span> <a href="#" id="page-title">Pet Place</a>. Todos os direitos
+        reservados.
+      </div>
+    </footer>
+
+    <script>
+      const years = new Date().getFullYear();
+      document.getElementById("footer-year").textContent = years;
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) || (e.ctrlKey && e.key === 'U')) {
+          e.preventDefault();
+        }
+      });
+    </script>
+
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/main.js"></script>
+
+    <script type="module">
+      import { API_URL } from "./env.js";
+
+      fetch(`${API_URL}/content/instagram`)
+        .then(res => res.json())
+        .then(posts => {
+          const grid = document.getElementById("instagram_grid");
+          if (!grid) return;
+
+          grid.innerHTML = "";
+
+          posts.forEach(p => {
+            if (!p.permalink) return;
+
+            const block = document.createElement("blockquote");
+            block.className = "instagram-media";
+            block.setAttribute("data-instgrm-permalink", p.permalink);
+            block.setAttribute("data-instgrm-version", "14");
+            grid.appendChild(block);
+          });
+
+          if (window.instgrm) {
+            window.instgrm.Embeds.process();
+          }
+        });
+    </script>
+
+    <script async src="https://www.instagram.com/embed.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "siteTitle": "Pet Place",
+  "hero": {
+    "title": "Doutor Pet",
+    "subtitle": "Amamos os pets assim como você :)",
+    "description": "De exames de rotina a tratamentos especializados, estamos aqui para garantir que seus pets tenham uma vida feliz e saudável.",
+    "buttonText": "Comece Aqui!",
+    "background": "/uploads/hero-bg.jpg",
+    "image": "/uploads/hero-main.png"
+  },
+  "products": [
+    {
+      "title": "Saco de lixo para cães",
+      "price": "29.00",
+      "description": "Sacos de lixo convenientes e ecológicos.",
+      "image": "/uploads/product-1.jpg"
+    },
+    {
+      "title": "Acessórios para pets",
+      "price": "49.00",
+      "description": "Acessórios estilosos e funcionais.",
+      "image": "/uploads/product-2.jpg"
+    },
+    {
+      "title": "Comida Canina",
+      "price": "79.00",
+      "description": "Racão nutritiva e deliciosa.",
+      "image": "/uploads/product-3.jpg"
+    }
+  ]
+}

@@ -151,26 +151,26 @@ new Swiper(".swiper", {
   },
 });
 
-// Carregar posts do Instagram
-// fetch(`${api_url}/content/instagram")
-//   .then((res) => res.json())
-//   .then((posts) => {
-//     const grid = document.getElementById("instagram_grid");
-//     grid.innerHTML = "";
+//Carregar posts do Instagram
+fetch(`${API_URL}/content/instagram`)
+  .then((res) => res.json())
+  .then((posts) => {
+    const grid = document.getElementById("instagram_grid");
+    grid.innerHTML = "";
 
-//     posts.forEach((p) => {
-//       const block = document.createElement("blockquote");
-//       block.className = "instagram-media";
-//       block.setAttribute("data-instgrm-permalink", p.permalink);
-//       block.setAttribute("data-instgrm-version", "14");
-//       grid.appendChild(block);
-//     });
+    posts.forEach((p) => {
+      const block = document.createElement("blockquote");
+      block.className = "instagram-media";
+      block.setAttribute("data-instgrm-permalink", p.permalink);
+      block.setAttribute("data-instgrm-version", "14");
+      grid.appendChild(block);
+    });
 
-//     // Reprocessa os embeds
-//     if (window.instgrm) {
-//       window.instgrm.Embeds.process();
-//     }
-//   });
+    // Reprocessa os embeds
+    if (window.instgrm) {
+      window.instgrm.Embeds.process();
+    }
+  });
 
 // Carregar conteúdos dos Intros
 fetch(`${API_URL}/content/intros`)

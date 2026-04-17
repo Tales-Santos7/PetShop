@@ -296,6 +296,26 @@
       </div>
     </section>
 
+    <script>fetch(`${api_url}/content/instagram`)
+        .then((res) => res.json())
+        .then((posts) => {
+          const grid = document.getElementById("instagram_grid");
+          grid.innerHTML = "";
+
+          posts.forEach((p) => {
+            const block = document.createElement("blockquote");
+            block.className = "instagram-media";
+            block.setAttribute("data-instgrm-permalink", p.permalink);
+            block.setAttribute("data-instgrm-version", "14");
+            grid.appendChild(block);
+          });
+
+          // Reprocessa os embeds
+          if (window.instgrm) {
+            window.instgrm.Embeds.process();
+          }
+        });</script>
+
     <!-- <img src="./src/img/instagram-1.jpg" alt="instagram">
         <img src="./src/img/instagram-2.jpg" alt="instagram">
         <img src="./src/img/instagram-3.jpg" alt="instagram">
@@ -331,7 +351,7 @@
             </li>
           </ul>
           <br />
-        
+
           <h4>Inquéritos</h4>
           <ul class="footer_links">
             <li><a href="#">

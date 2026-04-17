@@ -278,6 +278,11 @@ app.put("/content/footer", async (req, res) => {
   res.json(data);
 });
 
+app.use(express.static(path.join(__dirname, "public")));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 // Porta para rodar o servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

@@ -9,13 +9,7 @@ app.use(cors());
 
 app.use(express.json());
 
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("🔗 Conectado ao MongoDB Atlas!"))
-  .catch((err) => console.error("Erro ao conectar MongoDB:", err));
+mongoose.connect(process.env.MONGO_URL);
 
 const { Schema, model } = mongoose;
 
@@ -285,7 +279,7 @@ app.put("/content/footer", async (req, res) => {
 });
 
 // Porta para rodar o servidor
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });

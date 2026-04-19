@@ -2,4 +2,4 @@
 const isLocal = window.location.hostname === "localhost";
 
 // URL da API
-export const API_URL = "https://petshop-c8mh.onrender.com";
+export const API_URL = "https://petshop-89qo.onrender.com";

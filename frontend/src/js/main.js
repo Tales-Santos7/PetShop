@@ -156,9 +156,13 @@ fetch(`${API_URL}/content/instagram`)
   .then((res) => res.json())
   .then((posts) => {
     const grid = document.getElementById("instagram_grid");
+    if (!grid) return;
+
     grid.innerHTML = "";
 
     posts.forEach((p) => {
+      if (!p.permalink) return;
+
       const block = document.createElement("blockquote");
       block.className = "instagram-media";
       block.setAttribute("data-instgrm-permalink", p.permalink);
@@ -166,7 +170,6 @@ fetch(`${API_URL}/content/instagram`)
       grid.appendChild(block);
     });
 
-    // Reprocessa os embeds
     if (window.instgrm) {
       window.instgrm.Embeds.process();
     }

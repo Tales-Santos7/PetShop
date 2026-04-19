@@ -180,17 +180,6 @@
       </div>
     </section>
 
-    <script type="module">
-      import { API_URL } from "./env.js";
-
-      fetch(`${API_URL}/content/services-section`)
-        .then(res => res.json())
-        .then(data => {
-          const headerEl = document.getElementById("service-header");
-          if (headerEl) headerEl.textContent = data.header;
-        });
-    </script>
-
     <section id="testimonials-section" class="client">
       <div class="section_container client_container">
         <p class="section_subheader">Depoimentos</p>
@@ -296,26 +285,6 @@
       </div>
     </section>
 
-    <script>fetch(`${api_url}/content/instagram`)
-        .then((res) => res.json())
-        .then((posts) => {
-          const grid = document.getElementById("instagram_grid");
-          grid.innerHTML = "";
-
-          posts.forEach((p) => {
-            const block = document.createElement("blockquote");
-            block.className = "instagram-media";
-            block.setAttribute("data-instgrm-permalink", p.permalink);
-            block.setAttribute("data-instgrm-version", "14");
-            grid.appendChild(block);
-          });
-
-          // Reprocessa os embeds
-          if (window.instgrm) {
-            window.instgrm.Embeds.process();
-          }
-        });</script>
-
     <!-- <img src="./src/img/instagram-1.jpg" alt="instagram">
         <img src="./src/img/instagram-2.jpg" alt="instagram">
         <img src="./src/img/instagram-3.jpg" alt="instagram">
@@ -404,33 +373,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/js/index.js"></script>
     <script src="./src/js/main.js"></script>
-
-    <script type="module">
-      import { API_URL } from "./env.js";
-
-      fetch(`${API_URL}/content/instagram`)
-        .then(res => res.json())
-        .then(posts => {
-          const grid = document.getElementById("instagram_grid");
-          if (!grid) return;
-
-          grid.innerHTML = "";
-
-          posts.forEach(p => {
-            if (!p.permalink) return;
-
-            const block = document.createElement("blockquote");
-            block.className = "instagram-media";
-            block.setAttribute("data-instgrm-permalink", p.permalink);
-            block.setAttribute("data-instgrm-version", "14");
-            grid.appendChild(block);
-          });
-
-          if (window.instgrm) {
-            window.instgrm.Embeds.process();
-          }
-        });
-    </script>
 
     <script async src="https://www.instagram.com/embed.js"></script>
 

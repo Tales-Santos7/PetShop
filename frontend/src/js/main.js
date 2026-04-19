@@ -16,7 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (heroSpan) heroSpan.innerText = data.highlight || "";
       if (heroSubtitle) heroSubtitle.innerText = data.subtitle || "";
       if (heroDesc) heroDesc.innerText = data.description || "";
-      if (heroBtn) heroBtn.innerText = data.buttonText || "Saiba mais";
+      if (heroBtn) {
+        heroBtn.querySelector(".textBtn").innerText =
+          data.buttonText || "Saiba mais";
+      }
       if (heroPhoto && data.images?.[0]) heroPhoto.src = data.images[0];
     })
     .catch((err) => console.error("Erro ao buscar Hero:", err));

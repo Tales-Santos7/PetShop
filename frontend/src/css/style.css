@@ -179,6 +179,7 @@ header {
   color: var(--text-light);
   text-align: center;
 }
+
 .header_btn button {
   padding-block: 0.5rem;
   padding-inline: 1.5rem 0.5rem;
@@ -188,26 +189,47 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1rem;
   color: var(--text-dark);
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5rem;
   transition: 0.3s;
   cursor: pointer;
 }
-.header_btn button span {
-  padding: 5px 7px;
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
+
+.arrowBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #d9d6e8; /* cor tipo lilás claro */
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.header_btn button:hover {
-  color: var(--white);
-  background-color: rgba(0, 0, 0, 0.1);
+.textBtn {
+  font-size: 16px;
 }
-.header_btn button:hover span {
-  background-color: rgba(0, 0, 0, 0.4);
+
+.arrowBtn .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.arrowBtn:hover {
+  transform: translateY(-2px);
+  background: #9b91c2;
+  color: #d9d6e8;
 }
 
 .header_image {

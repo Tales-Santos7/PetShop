@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch(`${API_URL}/content/hero`)
     .then((res) => res.json())
     .then((data) => {
-      console.log("Hero data:", data);
       const heroTitle = document.getElementById("hero-title");
       const heroSpan = document.getElementById("hero-span");
       const heroSubtitle = document.getElementById("hero-subtitle");

@@ -91,13 +91,6 @@ export default function Hero() {
 
       <input
         type="text"
-        placeholder="Texto em destaque"
-        value={hero.highlight || ""}
-        onChange={(e) => setHero({ ...hero, highlight: e.target.value })}
-      />
-
-      <input
-        type="text"
         placeholder="Subtítulo"
         value={hero.subtitle || ""}
         onChange={(e) => setHero({ ...hero, subtitle: e.target.value })}

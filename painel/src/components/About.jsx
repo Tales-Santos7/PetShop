@@ -116,7 +116,7 @@ export default function About() {
         <button
           onClick={handleAddCard}
           style={{
-            backgroundColor: "#4caf50",
+            backgroundColor: "#2196f3",
             color: "white",
             padding: "6px 12px",
             borderRadius: "6px",
@@ -159,6 +159,7 @@ export default function About() {
                 padding: "4px 8px",
                 borderRadius: "4px",
                 cursor: "pointer",
+                marginBottom: "10px",
               }}
             >
               Remover
@@ -254,7 +255,7 @@ export default function About() {
         onClick={handleSave}
         style={{
           marginTop: "20px",
-          backgroundColor: "#2196f3",
+          backgroundColor: "#589a19",
           color: "white",
           border: "none",
           padding: "10px 15px",

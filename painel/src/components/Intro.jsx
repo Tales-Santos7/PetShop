@@ -65,7 +65,7 @@ export default function Intro() {
           className="intro-edit-item"
           id="cards-intro"
           key={intro._id || idx}
-        >
+        ><br />
           <h3 className="margin-bottom">Intro {idx + 1}</h3>
           <input
             type="text"

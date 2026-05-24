@@ -45,11 +45,11 @@ export default function Instagram() {
             onChange={(e) => handleChange(i, e.target.value)}
             placeholder="Link do post do Instagram"
           />
-          <button onClick={() => removePost(i)}>Remover</button>
+          <button className="btn-danger" onClick={() => removePost(i)}>Remover</button>
         </div>
       ))}
 
-      <button onClick={handleSave} style={{ marginTop: 15 }}>
+      <button className="btn-secondary" onClick={handleSave} style={{ marginTop: 15 }}>
         Salvar
       </button>
     </>

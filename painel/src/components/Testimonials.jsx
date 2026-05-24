@@ -119,7 +119,7 @@ export default function Testimonials() {
         <button
           onClick={toggleSection}
           style={{
-            background: enabled ? "#e74c3c" : "#2ecc71",
+            background: enabled ? "#e9ad22" : "#46a76e",
             color: "#fff",
             padding: "10px 15px",
             border: "none",
@@ -187,6 +187,7 @@ export default function Testimonials() {
             <button className="danger" onClick={() => handleDelete(t._id)}>
               Apagar
             </button>
+           
           </div>
         ))}
       </div>

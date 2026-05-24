@@ -241,6 +241,9 @@ img {
 
 .intro-edit-item {
   margin-bottom: 15px;
+  border: 1px solid #cfcfcc;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .margin-bottom {
@@ -269,6 +272,15 @@ img {
 .client_card.image-only img {
   max-width: 100%;
   border-radius: 12px;
+}
+
+.testimonial_card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #b3b1b1;
+  text-align: center; 
+  margin-bottom: 3%;
 }
 
 .testimonial_card img {
@@ -347,7 +359,7 @@ img {
 }
 
 .btn-secondary {
-  background: #81bb4b;
+  background: #589a19;
   border: none;
   padding: 8px 14px;
   border-radius: 6px;
@@ -355,7 +367,7 @@ img {
 }
 
 .btn-secondary:hover {
-  background: #e0e0e0;
+  background: #294320;
 }
 
 .btn-danger {

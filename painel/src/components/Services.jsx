@@ -111,7 +111,7 @@ export default function Service() {
         >
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <h4>Serviço {index + 1}</h4>
-            <button onClick={() => handleRemoveService(index)}>Remover</button>
+            <button style={{marginBottom: "10px"}} className="btn-danger" onClick={() => handleRemoveService(index)}>Remover</button>
           </div>
 
           <input
@@ -152,7 +152,7 @@ export default function Service() {
         </div>
       ))}
 
-      <button onClick={handleSave} style={{ marginTop: "20px" }}>
+      <button className="btn-secondary" onClick={handleSave} style={{ marginTop: "20px" }}>
         Salvar Alterações
       </button>
     </>

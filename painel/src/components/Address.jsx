@@ -2,12 +2,10 @@ import { useEffect, useState } from "react";
 const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Address() {
-  const [form, setForm] = useState({
-    address: "",
-    phone: "",
-    email: "",
-    mapUrl: "", // 🔥 novo campo
-  });
+ const [form, setForm] = useState({
+  address: "",
+  mapUrl: "",
+});
 
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
@@ -18,8 +16,6 @@ export default function Address() {
       .then((data) => {
         setForm({
           address: data.address || "",
-          phone: data.phone || "",
-          email: data.email || "",
           mapUrl: data.mapUrl || "",
         });
       })
@@ -79,30 +75,6 @@ export default function Address() {
             onChange={handleChange}
             placeholder="https://maps.google.com/..."
           />
-        </div>
-
-        <div className="form-row">
-          <div className="form-group">
-            <label>Telefone</label>
-            <input
-              type="text"
-              name="phone"
-              value={form.phone}
-              onChange={handleChange}
-              placeholder="(11) 99999-9999"
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="contato@email.com"
-            />
-          </div>
         </div>
 
         <button className="save-btn" type="submit" disabled={loading}>

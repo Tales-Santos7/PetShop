@@ -52,6 +52,24 @@ export default function Contact() {
 
   return (
     <div className="footer-config">
+      <div className="social-card">
+        <h4>Telefone</h4>
+        <input
+          className="input"
+          placeholder="Telefone"
+          value={footer.phone}
+          onChange={(e) => setFooter({ ...footer, phone: e.target.value })}
+        />
+
+        <h4>Email</h4>
+        <input
+          className="input"
+          placeholder="Email"
+          value={footer.email}
+          onChange={(e) => setFooter({ ...footer, email: e.target.value })}
+        />
+      </div>
+
       <h3 className="section-title">Redes Sociais</h3>
 
       <div className="social-list">

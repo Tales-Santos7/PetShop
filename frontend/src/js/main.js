@@ -202,6 +202,19 @@ fetch(`${API_URL}/content/footer`)
     const emailEl = document.getElementById("contact-email");
     if (emailEl) emailEl.innerText = data.email || "";
 
+    // WhatsApp
+    const whatsappLink = document.getElementById("contact-whatsapp");
+    if (whatsappLink && data.phone) {
+      const phoneNumber = data.phone.replace(/\D/g, ""); // remove espaços, parênteses e hífens
+      whatsappLink.href = `https://wa.me/55${phoneNumber}`;
+    }
+
+    // Email
+    const emailLink = document.getElementById("contact-email-link");
+    if (emailLink && data.email) {
+      emailLink.href = `mailto:${data.email}`;
+    }
+
     const mapLink = document.getElementById("contact-map-link");
     if (mapLink && data.mapUrl) {
       mapLink.href = data.mapUrl;

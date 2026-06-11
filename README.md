@@ -1,4 +1,4 @@
-# Landing Page Institucional
+# Pet Place
 
 Template dinâmico para sites institucionais. Com um painel integrado ao banco de dados, é possível alterar textos, imagens, serviços, depoimentos, redes sociais e informações de contato em poucos cliques, sem precisar editar código.
 O projeto foi criado para ser reutilizado em diferentes segmentos, como pet shops, clínicas, restaurantes, academias rápido e fácil de personalizar.
